@@ -1,7 +1,9 @@
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import path, include
+from django.shortcuts import redirect
 
 urlpatterns = [
-    path('sosmed/', include(('sosmed.urls', 'sosmed'), namespace='sosmed')),
+    path('', lambda request: redirect('/sosmed/')),
+    path('sosmed/', include('sosmed.urls')),
     path('admin/', admin.site.urls),
 ]
