@@ -4,5 +4,8 @@ from . import views
 app_name = 'sosmed'
 
 urlpatterns = [
-    path('', views.list, name='list'),
+    path('', views.list_instagram, name='list'),
+    path('create/', views.create, name='create'),
+    path('update/<int:update_id>/', views.update, name='update'),
+    path('delete/<int:delete_id>/', views.delete, name='delete'),
 ]
