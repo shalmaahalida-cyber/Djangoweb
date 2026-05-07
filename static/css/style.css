@@ -2,6 +2,43 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
-body {
-  font-family: 'Rubik', sans-serif;
+body{
+    background: #ffe6f0;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: #ff477b;
+    font-weight: bold;
+}
+
+table{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.btn-primary{
+    background-color: #ffacc3 !important;
+    border: none !important;
+}
+
+.btn-primary:hover{
+    background-color: #ff2e6a !important;
+}
+
+.btn-danger{
+    background-color: #e81f4e !important;
+    border: none !important;
+}
+
+.btn-warning{
+    background-color: #d65167 !important;
+    border: none !important;
+    color: black !important;
+}
+
+th{
+    background-color: #ffd6dd;
+    color: black;
 }
