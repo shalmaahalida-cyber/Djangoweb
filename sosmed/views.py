@@ -16,7 +16,7 @@ def create(request):
         "akun_form": akun_form,
     }
 
-    return render(request, 'sosmed/create.html', context)
+    return render(request, 'create.html', context)
 
 
 def list_instagram(request):
@@ -27,7 +27,7 @@ def list_instagram(request):
         'semua_akun': semua_akun,
     }
 
-    return render(request, 'sosmed/list.html', context)
+    return render(request, 'list.html', context)
 
 
 def update(request, update_id):
@@ -55,7 +55,7 @@ def update(request, update_id):
         "akun_form": akun_form,
     }
 
-    return render(request, 'sosmed/create.html', context)
+    return render(request, 'create.html', context)
 def delete(request, delete_id):
     Instagram.objects.filter(id=delete_id).delete()
     return redirect('sosmed:list') 
